@@ -187,5 +187,7 @@ footer {
 	background-color: #f1f1f1;
 	color: black;
 	position:absolute;
-	bottom: 0;
+	bottom: 10px;
+	left: 10px;
+	width: 100%;
 }
