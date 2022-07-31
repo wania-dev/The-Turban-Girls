@@ -183,3 +183,28 @@ input[type=text]:focus {
         /* margin-right: 50px!important; */
     }
 }
+
+.social-media{
+	padding: 10px;
+	display: flex;
+	position: center;
+    align-items: space-around;
+	justify-content:center;
+}
+
+.social-media a {
+    margin: 10px;
+    font-size: 2rem;
+    text-align:center;
+    display: inline-block;
+	color: black;
+}
+
+.social-media a i{
+	cursor: pointer;
+}
+
+.social-media  a:hover {
+	text-shadow: 0 0 50px black;
+}
+.fa-youtube:hover{color:red;}
