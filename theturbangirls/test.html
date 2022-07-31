@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+ #searchbar{
+     margin-left: 15%;
+     padding:15px;
+     border-radius: 10px;
+   }
+ 
+   input[type=text] {
+      width: 30%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+ 
+   /* When the input field gets focus,
+        change its width to 100% */
+   input[type=text]:focus {
+     width: 70%;
+   }
+ 
+  #list{
+    font-size:  1.5em;
+    margin-left: 90px;
+    list-style: none;
+   }
+   ol li {
+    border: 1px solid black;
+    width: 100px;
+    box-shadow: 2px 2px 2px black;
+    margin: 10px;
+   }
+ 
+.animals{
+   display: list-item;    
+  } 
+    </style>
+</head>
+<body>
+    <!-- input tag -->
+    <input id="searchbar" onkeyup="search_animal()" type="text"
+        name="search" placeholder="Search animals..">
+      
+    <!-- ordered list -->
+    <ol id='list'>
+        <li class="animals">I hate Cats</li>
+        <li class="animals">I love Dog</li>
+        <li class="animals">Elephant</li>
+        <li class="animals">Fish</li>
+        <li class="animals">Gorilla</li>
+        <li class="animals">Monkey</li>
+        <li class="animals">Turtle</li>
+        <li class="animals">Whale</li>
+        <li class="animals">Aligator</li>
+        <li class="animals">Donkey</li>
+        <li class="animals">Horse</li>
+    </ol>
+
+    <script>
+        // JavaScript code
+function search_animal() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('animals');
+	
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display="none";
+		}
+		else {
+			x[i].style.display="list-item";				
+		}
+	}
+}
+
+    </script>
+</body>
+</html>
