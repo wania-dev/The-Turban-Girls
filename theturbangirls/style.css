@@ -130,20 +130,19 @@ input[type=text]:focus {
     width: 70%;
 }
 #list{
-    width: 99%;
-    margin: 10px;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto
 }
 
 #list li {
-    max-width: 250px;
+    max-width: 25%;
     max-height: auto;
     /* -webkit-box-shadow: 0 0 10px black;
     box-shadow: 0 0 10px black; */
     margin-bottom: 15px;
-    margin: 10px;
+    padding: 10px;
     list-style-type: none;
     margin-left: 0!important;
     padding-left: 0!important;
