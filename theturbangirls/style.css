@@ -130,7 +130,8 @@ input[type=text]:focus {
     width: 70%;
 }
 #list{
-    width: 100%;
+    width: 95%;
+    margin: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto
